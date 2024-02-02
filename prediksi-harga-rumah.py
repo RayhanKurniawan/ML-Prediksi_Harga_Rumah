@@ -108,7 +108,7 @@ with tab1:
         provinsi = st.selectbox('Wilayah (Provinsi)', df['Provinsi'].unique())
         kolom1, kolom2, kolom3 = st.columns(3)
         with kolom1:
-            kamar_tidur = st.number_input('Jumlah Kamar Tidur', min_value=2, max_value=10, value=3)
+            kamar_tidur = st.number_input('Jumlah Kamar Tidur', min_value=1, max_value=10, value=3)
             
         with kolom2:
             luas_bangunan = st.number_input('Luas Bangunan ($m^2$)', min_value=30, step=1, value= 50)
